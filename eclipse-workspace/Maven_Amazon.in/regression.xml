@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite123" thread-count="2" parallel = "tests">
+	
+  		<test  name="ChromeTest">
+  			<parameter name="browser" value="Chrome"/>
+    		<classes>
+      			<class name="Exec_Test.TestNGSuit"/>
+      		<!--	<class name="Exec_Test.TestNGSuit1"/> -->
+   			 </classes>
+  		</test> <!-- Test123 -->
+  		
+  		<test name="FirefoxTest">
+  			<parameter name="browser" value="Firefox"/>
+    		<classes>
+      			<class name="Exec_Test.TestNGSuit"/>
+      		<!--	<class name="Exec_Test.TestNGSuit1"/> -->
+   			 </classes>
+  		</test> <!-- Test123 -->
+  		
+  		<test name="EdgeTest">
+  			<parameter name="browser" value="Edge"></parameter>
+    		<classes>
+      			<class name="Exec_Test.TestNGSuit"/>
+      		<!--	<class name="Exec_Test.TestNGSuit1"/> -->
+   			 </classes>
+  		</test> <!-- Test123 -->
+</suite> <!-- Suite123 -->
